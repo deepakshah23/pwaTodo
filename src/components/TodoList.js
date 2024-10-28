@@ -35,8 +35,9 @@ const TodoList = () => {
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}
         placeholder="Add new todo"
+          style={{fontSize:'20px',padding:"2px", margin:"2px"}}
       />
-      <button onClick={addTodo}>Add</button>
+      <button onClick={addTodo} style={{fontSize:'20px',padding:"2px", margin:"2px"}}>Add</button>
       <ul>
         {todos.map((todo, index) => (
           <TodoItem key={index} todo={todo} />
